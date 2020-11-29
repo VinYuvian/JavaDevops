@@ -4,6 +4,7 @@ pipeline{
     }
     
     tools{
+        
         maven 'Maven 3'
         jdk 'java11'
     }
@@ -19,7 +20,7 @@ pipeline{
             steps{
                 //echo "${PATH}"
                 sh 'mvn compile'
-                //mvn compile
+                
             }
             
         }
