@@ -1,11 +1,13 @@
 pipeline{
+    agent{
+        label 'maven'
+    }
+    
     tools{
         maven 'Maven 3'
         jdk 'java11'
     }
-    agent{
-        label 'maven'
-    }
+    
     stages{
         stage('checkout'){
             steps{
